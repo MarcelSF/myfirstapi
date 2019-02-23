@@ -32,7 +32,7 @@ rescue ActiveRecord::PendingMigrationError => e
   exit 1
 end
 
-RSpec.configuration do |config|
+RSpec.configure do |config|
   config.include RequestSpecHelper, type: :request
 end
 
