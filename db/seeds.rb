@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
+puts "creating Todos"
 #creating Todos
 learn_javascript = Todo.create!(
   title: "Learn Javascript",
@@ -24,6 +24,8 @@ have_fun = Todo.create!(
   )
 
 # Creating Todo Items
+
+puts "Creating Items"
 
 wesbos = learn_javascript.items.new(
   name: "Do the Wes Bos JS course"
